@@ -28,6 +28,16 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
+#Login page
+@app.route("/login")
+def login():
+    return render_template('login.html', title='Login')
+
+#Register page
+@app.route("/register")
+def register():
+    return render_template('register.html', title='Reigster')
+
 # if run on python go to debug mode
 if __name__ == '__main__':
     app.run(debug=True)
